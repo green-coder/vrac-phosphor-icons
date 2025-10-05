@@ -1,0 +1,8 @@
+.cpcache
+.idea
+.shadow-cljs
+.clj-kondo
+node_modules
+out
+package-lock.json
+*.iml

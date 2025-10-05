@@ -1,0 +1,5 @@
+{:deps true
+
+ :builds {:node {:target :node-script
+                 :output-to "out/main.js"
+                 :main phosphor.core/main}}}

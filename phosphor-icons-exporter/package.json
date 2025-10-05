@@ -1,0 +1,15 @@
+{
+  "name": "phosphor-icons-to-edn",
+  "private": true,
+  "scripts": {
+    "build": "npx shadow-cljs release node",
+    "dev": "npx shadow-cljs watch node"
+  },
+  "devDependencies": {
+    "shadow-cljs": "3.2.1"
+  },
+  "dependencies": {
+    "@phosphor-icons/core": "2.1.1",
+    "handlebars": "4.7.8"
+  }
+}

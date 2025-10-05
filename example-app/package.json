@@ -1,0 +1,12 @@
+{
+  "name": "vrac-phosphor-icons-example-app",
+  "private": true,
+  "scripts": {
+    "start": "npx shadow-cljs watch :app",
+    "release": "npx shadow-cljs release :app",
+    "server": "npx shadow-cljs server"
+  },
+  "devDependencies": {
+    "shadow-cljs": "3.2.1"
+  }
+}

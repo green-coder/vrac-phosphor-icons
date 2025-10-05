@@ -1,0 +1,72 @@
+body {
+  font-size: 24px;
+  margin: 1em;
+}
+
+.icon {
+  color: var(--icon-color);
+}
+
+.icon-color-candy-pink {
+  --icon-color: #faa;
+}
+
+pre {
+  margin: 0;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5em;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 0.5em;
+  border-color: #444;
+  padding: 0.5em;
+  margin: 0 0.1em;
+  text-decoration-line: none;
+  font-family: sans-serif;
+  color: #444;
+}
+
+.button:hover {
+  background-color: #4441;
+}
+
+.button:active {
+  background-color: #4442;
+}
+
+.right-section {
+  display: flex;
+  float: right;
+}
+
+.text-align-right {
+  text-align: right;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.grid-2columns {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 1rem;
+  align-items: center;
+  width: fit-content;
+}
+
+.grid-3columns {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 1rem;
+  align-items: center;
+  width: fit-content;
+}
+
+hr {
+  margin-top: 6rem;
+}

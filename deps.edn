@@ -1,0 +1,24 @@
+{:paths ["src" "resource"]
+
+ :deps {} ;; intentionally left empty
+
+ :aliases {:dev {:extra-deps {org.clojure/clojure       {:mvn/version "1.12.2"}
+                              org.clojure/clojurescript {:mvn/version "1.12.42"}
+                              taipei.404.vrac/vrac      {:mvn/version "0.1.2"}}}
+
+           ;; clojure -M:outdated --upgrade
+           :outdated {:extra-deps {com.github.liquidz/antq {:mvn/version "2.11.1276"}}
+                      :main-opts  ["-m" "antq.core"]}
+
+           :jar  {:replace-deps {com.github.seancorfield/depstar {:mvn/version "2.1.303"}}
+                  :exec-fn      hf.depstar/jar
+                  :exec-args    {:sync-pom    true
+                                 :group-id    "taipei.404.vrac"
+                                 :artifact-id "phosphor-icons"
+                                 :version     "0.1.0"
+                                 :jar         "phosphor-icons.jar"}}
+
+           :deploy {:extra-deps {slipset/deps-deploy {:mvn/version "0.2.2"}}
+                    :exec-fn    deps-deploy.deps-deploy/deploy
+                    :exec-args  {:installer :remote
+                                 :artifact "phosphor-icons.jar"}}}}
