@@ -17,6 +17,17 @@
 
 See [example-app/](example-app/) for more usage demo.
 
+## API Design
+
+All the icons were placed in the same namespace, in order to help the user
+quickly find the icons s/he needs directly from the autocompletion.
+
+The SVG icons are also provided as raw strings, to help the users when facing
+any uncommon use case that may arise.
+
+The icon component adds the `icon` class to the SVG element and sets the `width` and `height` properties by default.
+If you don't like those defaults, it's easy to use your own implementation after taking a look at the source code.
+
 ## Bundle size
 
 Tree shaking works well when compiling with Shadow-CLJS, which means that only the SVG icons you use will land in your released webapp.
